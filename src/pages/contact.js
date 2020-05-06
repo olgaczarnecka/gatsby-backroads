@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import ContactForm from "../components/Contact/ContactForm"
 
 const Contact = ({ data }) => (
   <Layout>
     <StyledHero img={data.contactBcg.childImageSharp.fluid} />
+    <ContactForm />
   </Layout>
 )
 
