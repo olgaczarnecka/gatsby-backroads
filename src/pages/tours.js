@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import Tours from "../components/Tours/Tours"
 
-const Tours = ({ data }) => (
+const tours = ({ data }) => (
   <Layout>
     <StyledHero img={data.tourBcg.childImageSharp.fluid} />
+    <Tours />
   </Layout>
 )
 
@@ -21,4 +23,4 @@ export const query = graphql`
   }
 `
 
-export default Tours
+export default tours
