@@ -2,7 +2,7 @@
 
 #### Starting the app
 
-    ```shell
+    ```
     yarn install
     gatsby develop
     ```
