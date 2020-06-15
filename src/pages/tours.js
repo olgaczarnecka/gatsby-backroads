@@ -1,11 +1,14 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import { graphql } from "gatsby"
 import Tours from "../components/Tours/Tours"
+import SEO from "../components/SEO"
 
 const tours = ({ data }) => (
   <Layout>
+    <SEO title="Tours" />
     <StyledHero img={data.tourBcg.childImageSharp.fluid} />
     <Tours />
   </Layout>

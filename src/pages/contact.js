@@ -1,11 +1,14 @@
 import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import { graphql } from "gatsby"
 import ContactForm from "../components/Contact/ContactForm"
+import SEO from "../components/SEO"
 
 const Contact = ({ data }) => (
   <Layout>
+    <SEO title="Contact" />
     <StyledHero img={data.contactBcg.childImageSharp.fluid} />
     <ContactForm />
   </Layout>
